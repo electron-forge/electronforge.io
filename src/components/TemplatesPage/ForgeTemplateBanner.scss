@@ -1,0 +1,28 @@
+.template {
+  display: flex;
+
+  .description {
+    color: #3a585f;
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      text-align: center;
+      color: #3a585f;
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  .iconContainer {
+    margin-right: 16px;
+
+    .icon {
+      border-radius: 50%;
+      overflow: hidden;
+      height: 120px;
+      width: 120px;
+      text-align: center;
+    }
+  }
+}

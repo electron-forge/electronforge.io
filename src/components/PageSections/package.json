@@ -1,0 +1,5 @@
+{
+  "name": "PageSection",
+  "main": "PageSections.jsx",
+  "private": true
+}

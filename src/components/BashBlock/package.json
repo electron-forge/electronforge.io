@@ -1,0 +1,5 @@
+{
+  "name": "BashBlock",
+  "main": "index.jsx",
+  "private": true
+}

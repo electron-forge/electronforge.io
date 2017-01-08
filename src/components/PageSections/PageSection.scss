@@ -1,0 +1,63 @@
+.section {
+  padding: 48px;
+
+  &.primary {
+
+  }
+
+  &.secondary {
+    min-height: 0;
+    border: 1px solid #e0e5e6;
+    background: #f6f8f8;
+  }
+
+  &.subtron {
+    position: relative;
+    text-align: center;
+    border: 1px solid #e0e5e6;
+    background-color: #f6f8f8;
+
+    > * {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    > h1 {
+      margin-bottom: 0.3em;
+      font-size: 40px;
+      color: #20515b;
+      font-weight: 300;
+      max-width: 800px;
+    }
+
+    > p {
+      color: #3a585f;
+      margin-bottom: 12px;
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 300;
+      max-width: 800px;
+    }
+  }
+
+  .sectionHeaderTitle {
+    margin-bottom: 0.3em;
+    font-size: 40px;
+    color: #20515b;
+    font-weight: 300;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sectionHeaderContent {
+    color: #3a585f;
+    margin-bottom: 12px;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

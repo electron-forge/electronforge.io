@@ -1,0 +1,35 @@
+.block {
+  color: #9feaf9;
+  background-color: #2b2e3b;
+  margin: 24px auto;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #111218;
+  max-width: 800px;
+  padding: 12px;
+  overflow: auto;
+  font-size: 16px;
+  line-height: 1.65;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.prefix {
+  user-select: none;
+  margin-left: 24px;
+}
+
+.comment {
+  user-select: none;
+  font-style: italic;
+  color: #719fad;
+}
+
+.line {
+  // Nothing to see here
+}
+
+.gap {
+  height: 24px;
+}
