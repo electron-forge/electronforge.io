@@ -1,6 +1,6 @@
 import React, { PureComponent, PropTypes } from 'react';
 import { Link } from 'react-router';
-import { MarkGithubIcon } from 'react-octicons-svg';
+import MarkGithubIcon from 'react-octicons-svg/dist/MarkGithubIcon';
 
 import { ElectronSVG } from '../SVG';
 import NavLink from './NavLink';

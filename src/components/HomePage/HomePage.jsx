@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
-import { GitCompareIcon, GlobeIcon, TasklistIcon } from 'react-octicons-svg';
+import GitCompareIcon from 'react-octicons-svg/dist/GitCompareIcon';
+import GlobeIcon from 'react-octicons-svg/dist/GlobeIcon';
+import TasklistIcon from 'react-octicons-svg/dist/TasklistIcon';
 import { Link } from 'react-router';
 
 import { PrimarySection, SecondarySection, SectionHeader, SubtronSection } from '../PageSections';
