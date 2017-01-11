@@ -18,7 +18,7 @@ export default class HomePage extends PureComponent {
         <PrimarySection>
           <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex' }}>
             <IconPoint icon={GitCompareIcon} title="Open Source">
-              Electron Forge is <b>completely Open Source</b> from it&apos;s building logic to it&apos;s update server.
+              Electron Forge is <b>completely Open Source</b> from its building logic to its update server.
             </IconPoint>
             <IconPoint icon={GlobeIcon} title="Community Driven">
               Electron Forge is powered by <b>community</b> packages and an active group of contributors.  We use tools that already exist to make your lives easier.
