@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import GitCompareIcon from 'react-octicons-svg/dist/GitCompareIcon';
+import FileCodeIcon from 'react-octicons-svg/dist/FileCodeIcon';
 import GlobeIcon from 'react-octicons-svg/dist/GlobeIcon';
-import TasklistIcon from 'react-octicons-svg/dist/TasklistIcon';
+import PackageIcon from 'react-octicons-svg/dist/PackageIcon';
 import { Link } from 'react-router';
 
 import { PrimarySection, SecondarySection, SectionHeader, SubtronSection } from '../PageSections';
@@ -17,14 +17,14 @@ export default class HomePage extends PureComponent {
         </SubtronSection>
         <PrimarySection>
           <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex' }}>
-            <IconPoint icon={GitCompareIcon} title="Open Source">
-              Electron Forge is <b>completely Open Source</b> from its building logic to its update server.
+            <IconPoint icon={FileCodeIcon} title="Develop">
+              A load of coolness about this thing, probably about this long but who really knows how long we can talk about coolness for.
             </IconPoint>
-            <IconPoint icon={GlobeIcon} title="Community Driven">
-              Electron Forge is powered by <b>community</b> packages and an active group of contributors.  We use tools that already exist to make your lives easier.
+            <IconPoint icon={PackageIcon} title="Package">
+              Well, I hate copy pasting and I don&apos;t know what to type here so let&apos;s just keep typing till it is more or less the same length.
             </IconPoint>
-            <IconPoint icon={TasklistIcon} title="Simple">
-              You don&apos;t need to know anything up front before using Electron Forge, with a <b>single command</b> you can get started today.
+            <IconPoint icon={GlobeIcon} title="Publish">
+              This is just embarassing now, I have not idea what to put in these text spots but at least there is something there now.
             </IconPoint>
           </div>
         </PrimarySection>
