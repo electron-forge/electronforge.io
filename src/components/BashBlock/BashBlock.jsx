@@ -8,11 +8,12 @@ export default class BashBlock extends PureComponent {
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
     ]),
+    fullWidth: PropTypes.bool,
   };
 
   render() {
     return (
-      <div className={styles.block}>
+      <div className={`${styles.block} ${this.props.fullWidth ? styles.fullWidth : ''}`}>
         {this.props.children}
       </div>
     );

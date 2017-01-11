@@ -5,6 +5,7 @@ import TemplatesPage from './components/TemplatesPage';
 import HomePage from './components/HomePage';
 import NotFoundPage from './components/NotFoundPage';
 import PageWrapper from './components/PageWrapper';
+import CLIWrapper from './components/CLIWrapper';
 
 export default class App extends PureComponent {
   render() {
@@ -12,6 +13,7 @@ export default class App extends PureComponent {
       <Router history={browserHistory}>
         <Route component={PageWrapper}>
           <Route path="/" component={HomePage} />
+          <Route path="/cli(/:command)" component={CLIWrapper} />
           <Route path="/templates" component={TemplatesPage} />
           <Route path="*" component={NotFoundPage} />
         </Route>

@@ -1,0 +1,24 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  .commandList {
+    width: 200px;
+    border-right: 1px solid #e0e5e6;
+
+    .commandLink {
+      padding: 4px;
+    }
+  }
+
+  .commandDocs {
+    flex: 1;
+    padding: 0 20px;
+    
+    .noCommand {
+      text-align: center;
+      margin-top: 100px;
+    }
+  }
+}

@@ -13,6 +13,12 @@
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+
+  &.fullWidth {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .prefix {
@@ -24,6 +30,7 @@
   user-select: none;
   font-style: italic;
   color: #719fad;
+  display: flex;
 }
 
 .line {
