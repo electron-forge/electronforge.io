@@ -14,6 +14,7 @@ export default class CLIWrapper extends PureComponent {
 
   render() {
     const { router: { params: { command } } } = this.props;
+    const targetDoc = docs.find(doc => doc.command === command);
 
     return (
       <div>
@@ -36,8 +37,8 @@ export default class CLIWrapper extends PureComponent {
             </div>
             <div className={styles.commandDocs}>
               {
-                command ?
-                  <CLIDoc doc={docs.find(doc => doc.command === command)} /> :
+                targetDoc ?
+                  <CLIDoc doc={targetDoc} /> :
                   <div className={styles.noCommand}>
                     <h1>Choose a Command</h1>
                     <p>To view the docs for a command, select it on the left</p>
