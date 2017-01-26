@@ -13,38 +13,36 @@ export default class HomePage extends PureComponent {
     return (
       <div>
         <SubtronSection title="Electron Forge">
-          Building Electron apps has never been easier.  Go from nothing to deployed in minutes.
+          The command line interface for ambitious Electron applications
         </SubtronSection>
         <PrimarySection>
-          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex' }}>
-            <IconPoint icon={FileCodeIcon} title="Develop">
-              A load of coolness about this thing, probably about this long but who really knows how long we can talk about coolness for.
-            </IconPoint>
-            <IconPoint icon={PackageIcon} title="Package">
-              Well, I hate copy pasting and I don&apos;t know what to type here so let&apos;s just keep typing till it is more or less the same length.
-            </IconPoint>
-            <IconPoint icon={GlobeIcon} title="Publish">
-              This is just embarassing now, I have not idea what to put in these text spots but at least there is something there now.
-            </IconPoint>
-          </div>
-        </PrimarySection>
-        <SecondarySection>
-          <SectionHeader title="Get Started">
-            Getting started with Electron Forge is super easy.  You&apos;ll be deploying your app in no time.
-          </SectionHeader>
-          <h3 style={{ textAlign: 'center' }}>Just install Electron Forge globally to get started:</h3>
           <BashBlock>
-            <Comment value="Install Electron Forge" />
             <Line value="npm install -g electron-forge" />
             <Gap />
             <Comment value="Initialize a new project" />
             <Line value="electron-forge init my-new-project" />
             <Gap />
-            <Comment value="Enter the directory and launch your app" />
+            <Comment value="Launch your app" />
             <Line value="cd my-new-project" />
             <Line value="electron-forge start" />
           </BashBlock>
-          <h3 style={{ textAlign: 'center' }}>Or dive deeper and read the <Link to="/cli">CLI documentation</Link></h3>
+          <h3 style={{ textAlign: 'center' }}>Ready for a closer look? <Link to="/cli">Dive into the CLI documentation</Link></h3>
+        </PrimarySection>
+        <SecondarySection>
+          <SectionHeader title="Opinionated Electron development">
+            Modern language compilation, one-step builds for all platforms,<br />and sane templates for your favorite frameworks.
+          </SectionHeader>
+          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex' }}>
+            <IconPoint icon={FileCodeIcon} title="Develop">
+              Electron Forge templates come with "configuration optional" support for ES2017 via Babel, TypeScript, CoffeeScript, LESS, SASS, Stylus, Jade, Vue 2.0 SFC, and CSON. You won't have to configure a single thing - just start writing your app using your favorite tools, <a href="https://github.com/electron/electron-compile">electron-compile</a> will take care of the rest.
+            </IconPoint>
+            <IconPoint icon={PackageIcon} title="Package">
+              Run a single command to turn your app into binaries for macOS, Windows, and Linux - for all supported architectures. Electron Forge will even generate compliant packages for Mac App Store and Windows Store. Need a dmg, rpm, deb, or squirrel file? A single command will do.
+            </IconPoint>
+            <IconPoint icon={GlobeIcon} title="Publish">
+              Combine your development into one streamlined workflow: Electron Forge fully supports integration with GitHub, Travis CI, and AppVeyor, enabling you to automatically build and publish binaries for all platforms and architectures without ever having to run builds on your developer machine.
+            </IconPoint>
+          </div>
         </SecondarySection>
       </div>
     );
