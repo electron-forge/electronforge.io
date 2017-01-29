@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "description": "Website for Electron Forge",
-  "main": "''",
+  "main": "src/index.jsx",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "deploy": "now --alias beta.electronforge.io",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors",
