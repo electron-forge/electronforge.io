@@ -1,0 +1,10 @@
+{
+  "name": "electronforge.io",
+  "type": "npm",
+  "aliases": [
+    "beta.electronforge.io"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
