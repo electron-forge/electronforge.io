@@ -1,5 +1,6 @@
 .template {
   display: flex;
+  position: relative;
 
   .description {
     color: #3a585f;
@@ -11,6 +12,28 @@
       color: #3a585f;
       margin: 0;
       font-size: 24px;
+      display: flex;
+
+      .nameString {
+        flex: 1;
+        margin-left: 20px;
+      }
+
+      .sampleIcon {
+        display: flex;
+        height: 32px;
+        width: 32px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        margin-right: 20px;
+
+        &:hover, &.sampleIconActive {
+          background: #e0e5e6;
+        }
+      }
     }
   }
 
@@ -23,6 +46,25 @@
       height: 120px;
       width: 120px;
       text-align: center;
+    }
+  }
+
+  .sample {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 64px);
+    z-index: 5;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 64px;
+    pointer-events: none;
+
+    > div {
+      margin: 0;
+      flex: 1;
+      box-shadow: 4px 2px 5px 0px rgba(170,170,170,1);
+      pointer-events: all;
     }
   }
 }
