@@ -16,7 +16,7 @@ export default class VueSVG extends PureComponent {
             <path fill="#4dba87" fillOpacity={1} fillRule="nonzero" stroke="none" d="M 0,0 -22.669,-39.264 -45.338,0 h -75.491 L -22.669,-170.017 75.491,0 Z" />
           </g>
           <g transform="translate(178.0626,235.0086)">
-            <path fill="#435466" fillOpacity={1} fillRule="nonzero" strok="none" d="M 0,0 -22.669,-39.264 -45.338,0 H -81.565 L -22.669,-102.01 36.227,0 Z" />
+            <path fill="#435466" fillOpacity={1} fillRule="nonzero" stroke="none" d="M 0,0 -22.669,-39.264 -45.338,0 H -81.565 L -22.669,-102.01 36.227,0 Z" />
           </g>
         </g>
       </svg>
