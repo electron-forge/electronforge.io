@@ -37,6 +37,7 @@ export default class ForgeTemplateBanner extends PureComponent {
       sampleOpen: false,
     });
     event.stopPropagation();
+    event.preventDefault();
   }
 
   _refSample = (sampleDiv) => {
