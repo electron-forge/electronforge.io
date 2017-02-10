@@ -22,16 +22,22 @@
       .sampleIcon {
         display: flex;
         height: 32px;
-        width: 32px;
+        padding: 0 8px;
         align-items: center;
         justify-content: center;
         border-radius: 4px;
         cursor: pointer;
         transition: background 0.3s ease-in-out;
         margin-right: 20px;
+        font-size: 12px;
 
         &:hover, &.sampleIconActive {
           background: #e0e5e6;
+        }
+
+        svg {
+          fill: #3a585f;
+          margin-right: 4px;
         }
       }
     }
@@ -52,12 +58,12 @@
   .sample {
     position: absolute;
     right: 0;
-    width: calc(100% - 64px);
+    width: calc(100% - 144px);
     z-index: 5;
     text-align: right;
     display: flex;
     justify-content: flex-end;
-    margin-right: 64px;
+    margin-right: 144px;
     pointer-events: none;
 
     > div {

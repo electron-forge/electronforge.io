@@ -75,6 +75,7 @@ export default class ForgeTemplateBanner extends PureComponent {
               (
                 <span className={`${styles.sampleIcon} ${sampleOpen ? styles.sampleIconActive : ''}`} onClick={this._openSample} title="Usage Example">
                   <CodeIcon />
+                  View Sample
                 </span>
               )
               : null
