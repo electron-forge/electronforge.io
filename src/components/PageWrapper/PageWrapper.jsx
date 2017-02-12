@@ -14,7 +14,7 @@ export default class PageWrapper extends PureComponent {
 
   render() {
     return (
-      <div>
+      <div className={styles.mainWrapper}>
         <header className={styles.header}>
           <div className={styles.container}>
 

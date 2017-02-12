@@ -1,3 +1,9 @@
+.mainWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   color: #74b1be;
   background-color: #2f3241;
@@ -46,11 +52,14 @@
 }
 
 .pageContainer {
-  // padding: 32px;
+  flex: 1;
 }
 
 .footer {
+  border-top: 1px solid #e0e5e6;
+  background: #f6f8f8;
   text-align: left;
   padding: 32px;
   color: #777;
+  margin-top: 32px;
 }
