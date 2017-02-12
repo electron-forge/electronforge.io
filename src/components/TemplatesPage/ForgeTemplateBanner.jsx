@@ -31,13 +31,15 @@ export default class ForgeTemplateBanner extends PureComponent {
   }
 
   _closeSample = (event) => {
-    if (this._sampleDiv && (this._sampleDiv.contains(event.target) || this._sampleDiv === event.target)) return;
+    if (event && this._sampleDiv && (this._sampleDiv.contains(event.target) || this._sampleDiv === event.target)) return;
     if (!this.state.sampleOpen) return;
     this.setState({
       sampleOpen: false,
     });
-    event.stopPropagation();
-    event.preventDefault();
+    if (event) {
+      event.stopPropagation();
+      event.preventDefault();
+    }
   }
 
   _refSample = (sampleDiv) => {
@@ -87,7 +89,7 @@ export default class ForgeTemplateBanner extends PureComponent {
           sampleOpen ?
           (
             <div className={styles.sample} onClick={this._stopPropagation} ref={this._refSample}>
-              <BashBlock>
+              <BashBlock closeText="Close Sample" onClose={this._closeSample}>
                 <Line value="npm install -g electron-forge" />
                 <Gap />
                 <Comment value="Initialize a new project" />

@@ -73,4 +73,64 @@
       pointer-events: all;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .description {
+      .name {
+        margin-top: 4px;
+        flex-direction: column;
+
+        .nameString {
+          margin: 0;
+        }
+
+        .sampleIcon {
+          margin: 0;
+        }
+      }
+
+      text-align: center;
+    }
+
+    .sample {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      > div {
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+
+        > div:first-child {
+          min-width: initial;
+          width: 100%;
+          overflow: auto;
+          padding-bottom: 16px;
+        }
+
+        > div:last-child {
+          display: block;
+          margin-top: 48px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .description {
+      .name {
+        font-size: 20px;
+      }
+
+      font-size: 14px;
+    }
+  }
 }

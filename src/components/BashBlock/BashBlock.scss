@@ -23,6 +23,28 @@
   .blockWidthConstrainer {
     min-width: 400px;
   }
+
+  .closeButton {
+    display: none;
+    margin-top: 64px;
+    text-align: center;
+
+    > button {
+      background : transparent;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: #9feaf9;
+      cursor: pointer;
+      transition: border-color 0.2s ease-in-out;
+      padding: 4px 12px;
+      outline: 0;
+      font-size: 16px;
+
+      &:hover {
+        border: 1px solid #9feaf9;
+      }
+    }
+  }
 }
 
 .prefix {
@@ -42,7 +64,7 @@
 }
 
 .line {
-  // Nothing to see here
+  white-space: nowrap;
 }
 
 .gap {
