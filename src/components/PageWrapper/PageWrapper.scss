@@ -92,4 +92,8 @@
   padding: 32px;
   color: #777;
   margin-top: 32px;
+
+  @media screen and (max-width: 800px) { 
+    text-align: center;
+  }
 }
