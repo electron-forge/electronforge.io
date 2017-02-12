@@ -8,6 +8,8 @@ import { PrimarySection, SecondarySection, SectionHeader, SubtronSection } from 
 import BashBlock, { Comment, Gap, Line } from '../BashBlock';
 import IconPoint from './IconPoint';
 
+import styles from './HomePage.scss';
+
 export default class HomePage extends PureComponent {
   render() {
     return (
@@ -32,7 +34,7 @@ export default class HomePage extends PureComponent {
           <SectionHeader title="Opinionated Electron development">
             Modern language compilation, one-step builds for all platforms,<br />and sane templates for your favorite frameworks.
           </SectionHeader>
-          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex' }}>
+          <div className={styles.pointContainer}>
             <IconPoint icon={FileCodeIcon} title="Develop">
               Electron Forge templates come with "configuration optional" support for ES2017 via Babel, TypeScript, CoffeeScript, LESS, SASS, Stylus, Jade, Vue 2.0 SFC, and CSON. You won't have to configure a single thing - just start writing your app using your favorite tools, <a href="https://github.com/electron/electron-compile">electron-compile</a> will take care of the rest.
             </IconPoint>

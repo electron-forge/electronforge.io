@@ -7,6 +7,11 @@
       height: 164px;
       width: 164px;
 
+      @media screen and (max-width: 800px) {
+        height: 128px;
+        width: 128px;
+      }
+
       path {
         fill: #3a585f;
       }
@@ -21,5 +26,9 @@
     font-size: 16px;
     padding-left: 4px;
     padding-right: 4px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 14px;
+    }
   }
 }
