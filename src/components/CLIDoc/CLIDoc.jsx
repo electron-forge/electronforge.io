@@ -42,14 +42,14 @@ export default class CLIDoc extends PureComponent {
         </BashBlock>
         <h2>Description</h2>
         {
-          doc.description.map(s => <p>{s}</p>)
+          doc.description.map((s, index) => <p key={index}>{s}</p>)
         }
         <h2>Arguments</h2>
         {
           doc.arguments.length === 0 ?
             <i>No Arguments</i> :
             doc.arguments.map(arg => (
-              <div>
+              <div key={arg.name}>
                 <h3>--{arg.name}{arg.value ? '=[value]' : ''}</h3>
                 <p>{arg.description}</p>
               </div>

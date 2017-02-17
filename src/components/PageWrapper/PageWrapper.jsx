@@ -27,6 +27,7 @@ export default class PageWrapper extends PureComponent {
               <NavLink href="/" text="Getting Started" />
               <NavLink href="/cli" text="CLI Usage" />
               <NavLink href="https://docs.electronforge.io" text="API Docs" external />
+              <NavLink href="/config" text="Configuration" />
               <NavLink href="/templates" text="Templates" />
               <NavLink
                 href="https://github.com/electron-userland/electron-forge"

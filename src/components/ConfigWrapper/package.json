@@ -1,0 +1,5 @@
+{
+  "name": "ConfigWrapper",
+  "main": "ConfigWrapper.jsx",
+  "private": true
+}
