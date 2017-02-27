@@ -1,7 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
 
-import BashBlock, { Comment, Line } from '../BashBlock';
-
 export default class ConfigPropDoc extends PureComponent {
   static propTypes = {
     prop: PropTypes.shape({
@@ -30,10 +28,12 @@ export default class ConfigPropDoc extends PureComponent {
         </code>
         <h2>Description</h2>
         {
-          prop.description.map((s, index) => <p key={index}>{s}</p>)
-        }
-        {
-          prop.footer || null
+          prop.description.map((s, index) => {
+            if (typeof s === 'string') {
+              return <p key={index}>{s}</p>;
+            }
+            return s;
+          })
         }
       </div>
     );
