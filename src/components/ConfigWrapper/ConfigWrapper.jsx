@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import { Link, routerShape } from 'react-router';
 
-import configProps from '../../config_props';
+import makeProps from '../../make_props';
+import publishProps from '../../publish_props';
 import ConfigPropDoc from '../ConfigPropDoc';
 import { PrimarySection, SubtronSection } from '../PageSections';
 
@@ -17,21 +18,21 @@ const example = {
   make_targets: {
     win32: ['squirrel'],
     darwin: ['zip'],
-    linux: ['deb', 'rpm']
+    linux: ['deb', 'rpm'],
   },
   electronPackagerConfig: {},
   electronWinstallerConfig: {
-    name: ''
+    name: '',
   },
   electronInstallerDebian: {},
   electronInstallerRedhat: {},
   github_repository: {
     owner: '',
-    name: ''
+    name: '',
   },
   windowsStoreConfig: {
-    packageName: ''
-  }
+    packageName: '',
+  },
 };
 
 export default class ConfigWrapper extends PureComponent {
@@ -86,8 +87,8 @@ export default class ConfigWrapper extends PureComponent {
                 {
                   JSON.stringify({
                     electronPackagerConfig: {
-                      name: '<%= productName %>'
-                    }
+                      name: '<%= productName %>',
+                    },
                   }, null, 2)
                 }
               </pre>
@@ -97,7 +98,7 @@ export default class ConfigWrapper extends PureComponent {
               your packaged app.
             </p>
           </div>
-        )
+        );
       default:
         return (
           <div>
@@ -108,9 +109,9 @@ export default class ConfigWrapper extends PureComponent {
             </p>
             <code>
               <pre>
-              {
-                JSON.stringify(example, null, 2)
-              }
+                {
+                  JSON.stringify(example, null, 2)
+                }
               </pre>
             </code>
             <p>
@@ -123,16 +124,16 @@ export default class ConfigWrapper extends PureComponent {
   }
 
   _renderSideMenu = items => items.map(item => (
-      <div key={item.label} className={styles.commandLink}>
-        <Link to={item.href}>
-          {item.label}
-        </Link>
-      </div>
-    ))
+    <div key={item.label} className={styles.commandLink}>
+      <Link to={item.href}>
+        {item.label}
+      </Link>
+    </div>
+  ))
 
   render() {
     const { router: { params: { property } } } = this.props;
-    const targetProp = configProps.find(prop => prop.name === property);
+    const targetProp = makeProps.find(prop => prop.name === property) || publishProps.find(prop => prop.name === property);
 
     return (
       <div>
@@ -146,9 +147,16 @@ export default class ConfigWrapper extends PureComponent {
               {
                 this._renderSideMenu(extras)
               }
-              <h3>Properties</h3>
+              <h3>Make Properties</h3>
               {
-                this._renderSideMenu(configProps.map(prop => ({
+                this._renderSideMenu(makeProps.map(prop => ({
+                  label: prop.name,
+                  href: `/config/${prop.name}`,
+                })))
+              }
+              <h3>Publish Properties</h3>
+              {
+                this._renderSideMenu(publishProps.map(prop => ({
                   label: prop.name,
                   href: `/config/${prop.name}`,
                 })))

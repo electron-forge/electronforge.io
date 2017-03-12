@@ -41,7 +41,7 @@ export default class PageWrapper extends PureComponent {
           {this.props.children}
         </div>
         <footer className={styles.footer}>
-          An <a href="https://github.com/electron-userland" target="_blank">Electron Userland</a> Project
+          An <a href="https://github.com/electron-userland" target="_blank" rel="noopener noreferrer">Electron Userland</a> Project
         </footer>
       </div>
     );

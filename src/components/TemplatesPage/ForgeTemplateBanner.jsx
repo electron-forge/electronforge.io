@@ -53,7 +53,7 @@ export default class ForgeTemplateBanner extends PureComponent {
     }
   }
 
-  _openSample = (event) => {
+  _openSample = () => {
     this.setState({
       sampleOpen: true,
     });

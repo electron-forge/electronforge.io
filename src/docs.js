@@ -37,7 +37,7 @@ module.exports = [
     arguments: [
       {
         name: 'prerelease',
-        description: 'If you set the flag it will fetch the latest release include prereleases, these are ignored by default so if you want to install alpha or beta versions you need to enable this flag.'
+        description: 'If you set the flag it will fetch the latest release include prereleases, these are ignored by default so if you want to install alpha or beta versions you need to enable this flag.',
       },
     ],
   },
@@ -87,7 +87,7 @@ module.exports = [
       {
         name: 'platform',
         value: true,
-        description: 'The target platform to package your application for.  You can package your application for platforms other than your current system platform.  Defaults to your system platform.'
+        description: 'The target platform to package your application for.  You can package your application for platforms other than your current system platform.  Defaults to your system platform.',
       },
     ],
   },

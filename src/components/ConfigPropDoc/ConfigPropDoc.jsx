@@ -8,7 +8,11 @@ export default class ConfigPropDoc extends PureComponent {
       example: PropTypes.object.isRequired,
       required: PropTypes.bool.isRequired,
       description: PropTypes.arrayOf(PropTypes.string).isRequired,
-      footer: PropTypes.node,
+      properties: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string,
+        type: PropTypes.string,
+        description: PropTypes.string,
+      })),
     }).isRequired,
   };
 
@@ -34,6 +38,20 @@ export default class ConfigPropDoc extends PureComponent {
             }
             return s;
           })
+        }
+        {
+          prop.properties ? <h2 style={{ marginBottom: 0 }}>Properties</h2> : null
+        }
+        {
+          prop.properties ?
+          prop.properties.map((property, index) => (
+            <div>
+              <h3 style={{ marginBottom: 0, marginTop: index === 0 ? 0 : 'initial' }}>{property.name}</h3>
+              <h4 style={{ marginTop: 0, marginBottom: 0 }}><small>Type: </small>{property.type}</h4>
+              <p>{property.description}</p>
+            </div>
+          )) :
+          null
         }
       </div>
     );

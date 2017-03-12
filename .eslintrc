@@ -4,7 +4,11 @@
   "rules": {
     "max-len": 0,
     "react/prefer-stateless-function": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style": 0,
+    "no-underscore-dangle": 0,
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/no-static-element-interactions": 0
   },
   "env": {
     "browser": true
