@@ -23,7 +23,7 @@ export default [
     name: 'Angular 2',
     key: 'angular2',
     icon: Angular2SVG,
-    description: 'AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML\'s syntax to express your application\'s components clearly and succinctly. Angular\'s data binding and dependency injection eliminate much of the code you would otherwise have to write.  This template contains Electron specific bootstrapping to get Angular 2 working with Forge.',
+    description: 'Angular is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML\'s syntax to express your application\'s components clearly and succinctly. Angular\'s data binding and dependency injection eliminate much of the code you would otherwise have to write.  This template contains Electron specific bootstrapping to get Angular 2 working with Forge.',
   },
   {
     name: 'Vue.JS 2.0',
