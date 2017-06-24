@@ -19,7 +19,7 @@ module.exports = [
       {
         name: 'template',
         value: true,
-        description: 'The name of the template to use when initalzing your app, the template is resolved from either a global module with the name "electron-forge-template-[name]" or from one of the internally provided template modules.  Not providing a template will default to the Vanilla ES6/7 template.',
+        description: 'The name of the template to use when initializing your app, the template is resolved from either a global module with the name "electron-forge-template-[name]" or from one of the internally provided template modules.  Not providing a template will default to the Vanilla ES6/7 template.',
       },
       {
         name: 'lintstyle',
