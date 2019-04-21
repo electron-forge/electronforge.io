@@ -14,7 +14,7 @@ module.exports = [
       // { comment: 'Initialize a new Electron Forge application in the given directory' },
       { line: 'electron-forge init [path]' },
     ],
-    description: ['Initializes a new application from a basic template that is compatibile with Electron Forge, out of the box we provide templates for React, Typescript, Angular and more. You can see all the available template on our "Templates" page.  If you do not provide a template we will simply give you a vanilla ES6/7 ready app template.', 'Templates will provide you with the minimum code required to get an app started along with all the forge config you will need to start building your app.', 'By default path will be the current directory'],
+    description: ['Initializes a new application from a basic template that is compatible with Electron Forge. Out of the box we provide templates for React, Typescript, Angular, and more. You can see all the available templates on our "Templates" page.  If you do not provide a template we will simply give you a vanilla ES6/7 ready app template.', 'Templates will provide you with the minimum code required to get an app started along with all the Forge config you will need to start building your app.', 'By default, path will be the current directory'],
     arguments: [
       {
         name: 'template',
